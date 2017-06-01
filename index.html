@@ -2,23 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/cd2d23a162.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
     <title>Git_User_Lookup</title>
   </head>
   <body>
 
+    <div id="header">
+      <h1>GitHub User Repositories</h1>
+      <label for="repos">Enter GitHub Username:</label>
+      <input id="repos" type="text">
+      <button class="btn-success" id="userRepos">Get Repos</button>
+      <div class="showUser"></div>
+    </div>
 
-      <div class="container">
-          <h1>Github User Lookup</h1>
-          <h2>Find Code, Projects and People on Github:</h2>
-          <form id="user-lookup" >
-            <input type="text" id="user-name" value="Enter Name ..." >
-            <button type="button" id="searchName"> Search </button>
-          </form>
-          <div class="showUser"></div>
-
+    <div id="output">
+      <div>
+        <ul class="showRepos">
+        </ul>
       </div>
+    </div>
 
   </body>
+  <!-- <body>
+    <div id="body-content">
+          <h1>Github User Lookup</h1>
+          <h2>Find Code, Projects and People on Github:</h2>
+        <aside id='gh-profile'>
+          <form id="user-lookup" >
+            <label for="user-name">GitHub User Name:</label>
+            <input type="text" id="user-name" name="user-name">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search </button>
+          </form>
+          <div id="profileInfo">
+          </div>
+        </aside>
+        <section id="repos">
+        </section>
+      </div>
+  </body> -->
 </html>
